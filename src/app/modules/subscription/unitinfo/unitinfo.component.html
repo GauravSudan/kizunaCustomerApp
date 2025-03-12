@@ -1,0 +1,74 @@
+<form>
+    <div class="row">
+        <div class="offset-md-2 col-12">
+            <h3 style="font-weight: 300;">Registración de cobertura de garantía</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="offset-md-2 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+            <label>
+                <h4 class="mb10 mt10">Concesionario</h4>
+            </label>
+        </div>
+        <div class="offset-md-1 col-xl-5 col-lg-4 col-md-4 col-sm-4 col-12">
+            <label>
+                <h4 class="mb10 mt10"> {{token.content?.customerName}} </h4>
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="offset-md-2 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+            <label>
+                <h4 class="mb10 mt10">Motor/Serie</h4>
+            </label>
+        </div>
+        <div class="offset-md-1 col-xl-5 col-lg-4 col-md-4 col-sm-4 col-12">
+            <label>
+                <h4 class="mb10 mt10"> {{token.content?.engineNo}} </h4>
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="offset-md-2 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+            <label>
+                <h4 class="mb10 mt10">Fecha de Venta (dd/mm/yyyy)</h4>
+            </label>
+        </div>
+        <div class="offset-md-1 col-xl-5 col-lg-4 col-md-4 col-sm-4 col-12">
+            <label>
+                <h4 class="mb10 mt10"> {{token.content?.salesDate}}  </h4>
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="offset-md-2 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+            <label>
+                <h4 class="mb10 mt10">Fecha de vencimiento de la Garantía (dd/mm/yyyy)</h4>
+            </label>
+        </div>
+        <div class="offset-md-1 col-xl-5 col-lg-4 col-md-4 col-sm-4 col-12">
+            <label>
+                <h4 class="mb10 mt10"> {{token.content?.warrantyEndDate}}  </h4>
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="offset-md-2 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+            <label>
+                <h4 class="mb10 mt10">Producto</h4>
+            </label>
+        </div>
+        <div class="offset-md-1 col-xl-5 col-lg-4 col-md-4 col-sm-4 col-12">
+            <label>
+                <h4 class="mb10 mt10"> {{token.content?.modelCode}}  </h4>
+            </label>
+        </div>
+    </div>
+    
+   <hr>
+    <div>
+        <button mat-button class="btn btn-primary pull-right ml10" matStepperNext>Descargar Manual de Usuario</button>
+        <button mat-button (click)="logout()" class="btn btn-primary pull-right">Buscar otro Motor</button>
+    </div> 
+   
+</form>

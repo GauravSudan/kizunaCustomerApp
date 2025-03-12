@@ -1,0 +1,72 @@
+<h1 class="text-align pdt20 pdb20">Zona Propietarios - YAMAHA</h1>
+<form [formGroup]="loginForm">
+    <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+            <mat-form-field class="fuse-mat-dense w-full" appearance="outline" style="border-color: red; width: 100%;">
+                <mat-label>Ingrese el Nro. de motor</mat-label>
+                <input style="text-transform: capitalize" matInput type="text" formControlName="txtEngineNo" style="text-transform: uppercase;"
+                id="txtEngineNo" [(ngModel)]="txtEngineNo" name="txtEngineNo" maxlength="20"> 
+            </mat-form-field> 
+            <div *ngIf="submitted && loginForm.get('txtEngineNo')?.errors" class="alert alert-danger">
+                <div *ngIf="loginForm.get('txtEngineNo')?.errors">
+                    Este campo es obligatorio.
+                </div>
+            </div>
+            <p style="text-align: center;">Ingréselo tal cual aparece en la cedula de su unidad, respetando guiones y espacios</p>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+        </div>
+    </div>
+
+    <div class="row" style="padding-top: 50px;">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+            <mat-form-field class="fuse-mat-dense w-full" appearance="outline" style="border-color: red; width: 100%;">
+                <mat-label>E-mail</mat-label>
+                <input matInput type="email" formControlName="txtEmail"
+                    id="txtEmail" [(ngModel)]="txtEmail" name="txtEmail"  email="true" 
+                    maxlength="40"
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"
+                    id="txtEmail"
+                    placeholder="abc@gmail.com" > 
+            </mat-form-field>
+            <div *ngIf="submitted && loginForm.get('txtEmail')?.errors" class="alert alert-danger">
+                <div *ngIf="loginForm.get('txtEmail')?.errors">
+                    Este campo es obligatorio o no válido.
+                </div>
+               
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ">
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 spinner-container">
+            <button [disabled]="isLoading" mat-button class="btn btn-primary ml10" (click)="checkVerify()">Obtener OTP</button>
+            
+        </div>
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ">
+            <div class="bd-example">
+                
+              </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ">
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 spinner-container">
+            
+            <mat-spinner strokeWidth="2" diameter="25" *ngIf="isLoading"></mat-spinner>
+          
+        </div>
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ">
+        </div>
+    </div>
+
+</form>

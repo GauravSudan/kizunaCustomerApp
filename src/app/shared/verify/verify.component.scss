@@ -1,0 +1,11 @@
+.text-align-center{
+  text-align: center;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;  /* Horizontally center */
+  align-items: center;      /* Vertically center */
+  //height: 100vh;            /* Full viewport height */
+  width: 100%;              /* Full width */
+}

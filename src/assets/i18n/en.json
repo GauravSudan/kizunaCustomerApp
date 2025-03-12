@@ -1,0 +1,14 @@
+{
+    "welcome-back": "Welcome back",
+    "Project": "Project",
+    "Analytics": "Analytics",
+    "cookie": {
+        "header": "Cookies used on the website!",
+        "message": "By using our site, you acknowledge that you have read and understand our",
+        "dismiss": "Got it!",
+        "allow": "Allow cookies",
+        "deny": "Decline",
+        "link": "Learn more",
+        "policy": "Cookie Policy"
+    }
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Zona Propietarios - YAMAHA</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon-16x16.png">
+  <!-- <link rel="icon" type="image/png" href="favicon-32x32.png"> -->
+
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/css/fontello.css" rel="stylesheet">
+  <!-- Icon fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CMerriweather:300,300i,400,400i,700,700i"
+    rel="stylesheet">
+  <!-- Splash screen styles -->
+  <link href="assets/styles/splash-screen.css" rel="stylesheet">
+</head>
+
+<body class="mat-typography">
+  <ycore-splash-screen>
+    <img src="assets/images/logo/logo.png" alt="logo">
+    <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
+  </ycore-splash-screen>
+  <app-root></app-root>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="assets/js/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript " src="assets/js/menumaker.js"></script>
+  <!-- sticky header -->
+  <script type="text/javascript " src="assets/js/jquery.sticky.js"></script>
+  <script type="text/javascript " src="assets/js/sticky-header.js"></script>
+  <!-- Back to top script -->
+  <script src="assets/js/back-to-top.js" type="text/javascript "></script>
+  <script>
+    $("#example-one, #example-two, #example-three, #example-four, #example-five, #example-six ").on("click", function () {
+      var el = $(this);
+      el.text() == el.data("text-swap") ?
+        el.text(el.data("text-original")) :
+        el.text(el.data("text-swap"));
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter var,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.mat-body, .mat-body-1, .mat-typography .mat-body, .mat-typography .mat-body-1, .mat-typography {
+    font: 400 14px/10px Roboto,"Inter var,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    letter-spacing: normal;
+}
+
+.mat-h2,
+.mat-title,
+.mat-typography .mat-h2,
+.mat-typography .mat-title,
+.mat-typography h2 {
+    font: 600 24px/32px "Inter var,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    letter-spacing: normal;
+    margin: 0;
+}
+
+.mat-h1,
+.mat-title,
+.mat-typography .mat-h1,
+.mat-typography .mat-title,
+.mat-typography h1 {
+    font: 900 32px/44px "Inter var,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    letter-spacing: normal;
+    margin: 0;
+}
+
+.mat-h3,
+.mat-subheading-2,
+.mat-typography .mat-h3,
+.mat-typography .mat-subheading-2,
+.mat-typography h3 {
+    font: 600 25px/28px "Inter var,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    letter-spacing: normal;
+    margin: 0 0 20px 0;
+}
+
+.mat-h4, .mat-subheading-1, .mat-typography .mat-h4, .mat-typography .mat-subheading-1, .mat-typography h4{
+    font: 400 15px/24px Roboto,"Helvetica Neue", sans-serif;
+    letter-spacing: normal;
+    margin: 0 0 0;
+}
+
+.text-align{
+    text-align: center;
+}
+
+.mat-form-field{
+    width: 100%;
+}
+
+.mat-horizontal-stepper-header{
+    padding: 0px 15px !important;
+}
+
+.mat-step-icon{
+    height: 40px !important;
+    width: 40px !important;
+}
+
+.mat-step-label{
+    min-width: 0 !important;
+}
+
+.mat-horizontal-stepper-header .mat-step-icon{
+    margin-right: 0 !important;
+}
+
+.mat-stepper-horizontal-line{
+    border-top-width: 4px !important;
+}
+
+.mat-step-header.cdk-keyboard-focused, .mat-step-header.cdk-program-focused, .mat-step-header:hover:not([aria-disabled]), .mat-step-header:hover[aria-disabled=false]{
+    background-color: transparent !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-wrapper{
+    margin: .1em 0 !important;
+}
+
+.mat-form-field-wrapper {
+    padding-bottom: 1.4em !important;
+}
+
+.popupwidth{
+    max-width: 500px;
+}
+
+.text-md{
+    font-size: 16px;
+}

@@ -1,0 +1,28 @@
+<div class="row">
+    <p style="color: red;" class="text-style">FELICITACIONES! La unidad consultada se encuentra registrada satisfactoriamente.
+        Usted cuenta con la protección y cobertura de la garantía(*) especial YAMAHA</p>
+</div>
+
+<mat-stepper [@.disabled]="true" [linear]="isLinear" #stepper>
+   
+    <mat-step [stepControl]="thirdFormGroup" [editable]="isEditable">
+        <div class="pdt20">
+            <unitinfo></unitinfo>
+            
+        </div>
+    </mat-step>
+     <mat-step [stepControl]="fourthFormGroup" [editable]="isEditable">
+        <div class="pdt20">
+            <usermanualdownload></usermanualdownload>
+           
+        </div>
+    </mat-step>
+   
+</mat-stepper>
+<div class="row">
+    <p style="color: black;" class="text-style">(*)Tal como se menciona en el manual de garantía de su unidad, las motocicletas y ATV´s diseñados para competicion 
+        no se encuentran cubiertos por la garantía especial de Yamaha. No obstante los usuarios que posean estas unidades 
+        podrán verificar la registración, completar sus datos, contestar la encuesta y participar de los sorteos 
+        mencionados. Para mas informacion consulte su manual de garantía. </p>
+
+</div>

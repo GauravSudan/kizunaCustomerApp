@@ -1,0 +1,85 @@
+<form>
+  <div class="row">
+    <h3 style="font-weight: 300;">Descargar Manual de Usuario:</h3>
+  </div>
+  <div class="row spinner-container">
+    <mat-spinner strokeWidth="2" diameter="25" *ngIf="isLoading"></mat-spinner>
+  </div>
+ 
+  <div class="mat-app-background basic-container table-responsive custom-table"  >
+      <mat-table [dataSource]="dataSource">
+        <ng-container matColumnDef="category">
+          <mat-header-cell *matHeaderCellDef> Categoría </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.category}} </mat-cell>
+        </ng-container>
+    
+        <ng-container matColumnDef="docType">
+          <mat-header-cell *matHeaderCellDef> Tipo de Documento </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.documentType}} </mat-cell>
+        </ng-container>
+    
+        <ng-container matColumnDef="createdDate">
+          <mat-header-cell *matHeaderCellDef> Fecha de creación </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.createDate}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="modifiedDate">
+          <mat-header-cell *matHeaderCellDef> Fecha de modificación de </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.lastModified}} </mat-cell>
+        </ng-container>
+    
+        <ng-container matColumnDef="title">
+          <mat-header-cell *matHeaderCellDef> Título </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.title}} </mat-cell>
+        </ng-container>
+    
+        <ng-container matColumnDef="desc">
+          <mat-header-cell *matHeaderCellDef> Descripción </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.description}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="modelCode">
+          <mat-header-cell *matHeaderCellDef> Código de modelo </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.modelCode}} </mat-cell>
+        </ng-container>
+    
+        
+    
+        <ng-container matColumnDef="pubno">
+          <mat-header-cell *matHeaderCellDef> Publicación N° </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.publicationNo}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="file">
+          <mat-header-cell *matHeaderCellDef> Archivo </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.fileName}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="download">
+          <mat-header-cell *matHeaderCellDef> Descargar </mat-header-cell>
+          <mat-cell *matCellDef="let element"> 
+            <button (click)="onClick(element.fileName,element.fileDownloadID )"> <i class="fa fa-download"></i></button>
+
+            <!-- <a download="{{element.fileDownloadID}}"
+            target="_blank" style="border: none;"
+            [href]="attachmentsinvoicefileName1URL" >{{element.fileDownloadID}}</a> -->
+
+          </mat-cell>
+        </ng-container>
+    
+        <!-- Header and Row Definitions -->
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;" class="custom-row"></mat-row>
+      </mat-table>
+    
+      <!-- Paginator 
+      <mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 25]" showFirstLastButtons></mat-paginator>-->
+    </div>
+    
+  <hr>
+  <div>
+    <button mat-button (click)="logout()" class="btn btn-primary pull-right">Buscar otro Motor</button> 
+    <button mat-button matStepperPrevious style="margin-right: 10px;" class="btn btn-primary pull-right">Atrás</button>
+  </div>
+
+</form>

@@ -1,0 +1,135 @@
+.RequiredLabelAfter:after {
+    content: "*";
+    color: red;
+}
+.margin-top-40
+{
+    margin-top: 40px;
+}
+.margin-right-5{
+    margin-right: 5px;;
+}
+.required {
+    color: #d00 !important;
+    pointer-events: auto;
+    cursor: pointer;
+}
+.control-label.required:after {
+    color: #d00 !important;
+    content: "*";
+    margin-left: 5px;
+    top: 7px;
+}
+.mat-error{
+    color: #d00 !important;
+}
+.alert-danger {
+    color: #721c24 !important;
+    background-color: #f8d7da!important;
+    border-color: #f5c6cb!important;
+}
+table {
+    width: 100%;
+}
+
+.mat-header-cell {
+    font-weight: 700;
+}
+
+.mat-column-index {
+    min-width: 40px;
+}
+
+.mat-column-vendorName,
+.mat-column-partNo,
+.mat-column-partName,
+.mat-column-srp,
+.mat-column-unitPrice,
+.mat-column-reservedQuantity
+.mat-column-availableQuantity 
+.mat-column-quantity 
+.mat-column-price 
+.mat-column-VAT 
+.mat-column-backOrderQuantity 
+.mat-column-city 
+.mat-column-town 
+.mat-column-postCode 
+{
+    min-width: 110px;
+}
+
+
+tr.row-item:hover {
+    background: whitesmoke;
+}
+
+
+th.mat-sort-header-sorted {
+    color: black;
+}
+
+.mat-loading-shade {
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-container {
+    height: 400px;
+    overflow: auto;
+}
+
+.card-body.result-container {
+    padding: 0;
+}
+
+// .mat-header-cell {
+//     background-color: #fbfbfb !important;
+//     color: #000000 !important;
+// }
+
+.mat-header-cell:not(:first-child) {
+    padding-left: 0;
+}
+
+.clickable-list{
+    cursor: pointer;
+    color: blue !important;
+}
+
+.RequiredLabelAfter:after {
+    content: "*";
+    color: red;
+}
+
+
+.modal-content{
+    height: 700px;
+    overflow: scroll !important;
+}
+::ng-deep .mat-radio-outer-circle {
+    height: 15px !important;
+    width: 15px !important;
+    top: 3px !important;
+    border-width: 1px !important;
+}
+::ng-deep .mat-radio-inner-circle{
+    height: 15px !important;
+    width: 15px !important;
+    top: 3px !important;
+}
+
+.spinner-container {
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    height: 10vh;            /* Full viewport height */
+    width: 100%;              /* Full width */
+  }
+  
